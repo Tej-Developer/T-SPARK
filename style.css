@@ -1,5 +1,6 @@
 :root {
-    --main: #1c49c2;
+    --main: #35323b;
+    --btns: #000000ad, #1c49c2, #1c49c2, #e0e0e0a8;
 }
 
 *{
@@ -14,12 +15,12 @@
 body{
     height: 100%;
     width: 100%;
-    background-color: oldlace;
+    background-color: antiquewhite;
 }
 
 
 header{
-    background-color: var(--main);
+    background-color: #020e4a;
     color: #fff;
     width: 100vw;
     display: flex;
@@ -124,13 +125,15 @@ header{
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
+    padding: 9px 13px;
+    font-size: 17px;
 }
 
 .cart {
     border: none;
     margin: 20px;
     /* background-color: orange; */
-    background: linear-gradient(360deg, #000000ad, transparent, transparent, #e0e0e0a8);
+    background: linear-gradient(360deg, var(--btns));
     border-radius: 10px;
     padding: 10px 15px;
 }
@@ -148,7 +151,7 @@ header{
     border: none;
     margin: 20px;
     /* background: linear-gradient( #e0e0e0a8, #310970, #310970, #000000ad); */
-    background: linear-gradient( #e0e0e0a8, #ff0000, #cc0a0a, #750909, #000000ad);
+    background: linear-gradient(360deg, var(--btns));
     border-radius: 10px;
     padding: 10px 15px;
 }
@@ -156,7 +159,7 @@ header{
 .login {
     border: none;
     margin: 20px;
-    background-color: orange;
+    background: linear-gradient(360deg, var(--btns));
     border-radius: 10px;
     padding: 10px 15px;
 }
@@ -182,23 +185,31 @@ header{
 
 .dealBtn:hover .dealBtn-inner {
     /* transform: scale(1); */
-    visibility: visible;
+    /* visibility: visible; */
+    display: flex;
     animation: ani1 0.5s ease-out;
 }
 
 .dealBtn-inner {
+    border: 2px solid #dbdbdbad;
+    border-radius: 20px;
+    display: none;
     /* transform: scale(0); */
-    visibility: hidden;
-    position: absolute;
-    background-color: dimgrey;
+    /* visibility: hidden; */
+    background-color: rgba(255, 255, 255, 0.548);
+    backdrop-filter: blur(10px);
     min-width: 60rem;
     min-height: 35rem;
-    margin-top: 30px;
+    margin-top: 10px;
     cursor: auto;
+    position: absolute;
     top: 20px;
     transition: animation 0.5s ease;
 }
 
+@media (min-width: 900px) {
+    
+}
 
 @keyframes ani1 {
     0%{
@@ -259,7 +270,7 @@ header{
 main {
     min-height: 100vh;
     width: 90vw;
-    background-color: antiquewhite;
+    background-color: oldlace;
     /* margin-right: 0; */
     margin: auto;
     display: flex;
@@ -269,8 +280,8 @@ main {
 }
 
 .banner {
-    width: 80rem;
-    height: 10rem;
+    width: 100%;
+    height: 12rem;
     margin-top: 20px;
     background-color: #fff;
     overflow: hidden;
@@ -280,9 +291,9 @@ main {
 }
 
 .banner img {
-    width: 80rem;
+    width: 100%;
     height: 25rem;
-    background-size: cover;
+    /* object-fit: cover; */
 }
 
 .banner1 {
@@ -298,7 +309,18 @@ main {
 }
 
 .boxes .box {
+    border: 1px solid black;
     margin: auto;
+    margin: 0 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+
+.boxes .box .content {
+    background-color: #fffeca;
+    height: 30px;
+    text-align: center;
 }
 
 /* .box1 {
@@ -306,9 +328,15 @@ main {
     height: 50px;
 } */
 
-.box1 img {
+.box1 .imgBox img {
     width: 200px;
     height: 200px;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+.box1 .imgBox:hover img {
+    scale: 1.1;
 }
 
 footer {
