@@ -296,8 +296,8 @@ main {
     /* object-fit: cover; */
 }
 
-.banner1 {
-}
+/* .banner1 {
+} */
 
 .boxes {
     width: 80vw;
@@ -314,6 +314,11 @@ main {
     margin: 0 10px;
     margin-bottom: 15px;
     overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.boxes .box:hover {
+    transform: translateY(-5px);
 }
 
 
@@ -335,9 +340,9 @@ main {
     transition: all ease 0.5s;
 }
 
-.box1 .imgBox:hover img {
+/* .box1 .imgBox:hover img {
     scale: 1.1;
-}
+} */
 
 footer {
     height: 2.5rem;
