@@ -22,11 +22,11 @@ body{
 header{
     background-color: #020e4a;
     color: #fff;
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10rem;
+    height: 5rem;
 }
 
 .headerContainer{
@@ -49,8 +49,9 @@ header{
 
 .logo{
     margin: 10px;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
+    opacity: 1;
+    /* opacity: 0;
+    animation: slideRight 1s ease forwards; */
 }
 
 .logo > a{
@@ -60,14 +61,17 @@ header{
 
 .logo span {
     text-shadow: 5px 5px 2px black;
+    font-size: 35px;
+    font-weight: 600;
 }
 
 .searchContainer{
     flex: 1;
     width: 100%;
     position: relative;
-    opacity: 0;
-    animation: slideBottom 1s ease forwards;
+    opacity: 1;
+    /* opacity: 0;
+    animation: slideBottom 1s ease forwards; */
 }
 
 .searchForm {
@@ -103,7 +107,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .searchForm input{
@@ -122,20 +126,22 @@ header{
 }
 
 .cart, .services, .login {
-    opacity: 0;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: calc(.2s * var(--i));
+    opacity: 1;
+    /* animation: slideLeft 1s ease forwards; */
+    /* animation-delay: calc(.2s * var(--i)); */
     padding: 9px 13px;
-    font-size: 17px;
+    font-size: 30px;
+    background: transparent;
+    margin: 10px;
 }
 
 .cart {
     border: none;
-    margin: 20px;
+    /* margin: 20px; */
     /* background-color: orange; */
-    background: linear-gradient(360deg, var(--btns));
+    /* background: linear-gradient(360deg, var(--btns)); */
     border-radius: 10px;
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
 }
 
 .cart i{
@@ -149,17 +155,17 @@ header{
 
 .services {
     border: none;
-    margin: 20px;
+    /* margin: 20px; */
     /* background: linear-gradient( #e0e0e0a8, #310970, #310970, #000000ad); */
-    background: linear-gradient(360deg, var(--btns));
+    /* background: linear-gradient(360deg, var(--btns)); */
     border-radius: 10px;
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
 }
 
 .login {
     border: none;
     margin: 20px;
-    background: linear-gradient(360deg, var(--btns));
+    /* background: linear-gradient(360deg, var(--btns)); */
     border-radius: 10px;
     padding: 10px 15px;
 }
