@@ -12,7 +12,7 @@
     scroll-behavior: smooth;
 }
 
-body{
+html, body{
     height: 100%;
     width: 100%;
     background-color: antiquewhite;
@@ -37,16 +37,6 @@ header{
     justify-content: space-between;
     z-index: 9;
     width: 100%;
-}
-
-@media screen and (max-width: 920px) {
-    body {
-        display: flex;
-    }
-    .headerContainer {
-        padding: 50px 0;
-        /* width: 100%; */
-    }
 }
 
 .upperPart{
@@ -135,7 +125,7 @@ header{
     border: none;
 }
 
-.cart, .services, .login {
+.cart, .services, .login, .menuBtn {
     opacity: 1;
     /* animation: slideLeft 1s ease forwards; */
     /* animation-delay: calc(.2s * var(--i)); */
@@ -143,14 +133,14 @@ header{
     font-size: 30px;
     background: transparent;
     margin: 10px;
+    border: none;
+    border-radius: 10px;
 }
 
 .cart {
-    border: none;
     /* margin: 20px; */
     /* background-color: orange; */
     /* background: linear-gradient(360deg, var(--btns)); */
-    border-radius: 10px;
     /* padding: 10px 15px; */
 }
 
@@ -158,25 +148,21 @@ header{
     color: #fff;
 }
 
-.cart a, .services a, .login a{
+.cart a, .services a, .login a, .menuBtn a{
     text-decoration: none;
     color: white;
 }
 
 .services {
-    border: none;
     /* margin: 20px; */
     /* background: linear-gradient( #e0e0e0a8, #310970, #310970, #000000ad); */
     /* background: linear-gradient(360deg, var(--btns)); */
-    border-radius: 10px;
     /* padding: 10px 15px; */
 }
 
 .login {
-    border: none;
     margin: 20px;
     /* background: linear-gradient(360deg, var(--btns)); */
-    border-radius: 10px;
     padding: 10px 15px;
 }
 
@@ -380,4 +366,21 @@ footer {
     font-size: 18px;
     color: #fff;
     text-shadow: black 0 2px;
+}
+
+
+@media screen and (max-width: 930px) {
+    .headerContainer {
+        padding: 50px 0;
+        /* width: 100%; */
+    }
+    .cart, .services, .login {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .searchContainer {
+        display: none;
+    }
 }
