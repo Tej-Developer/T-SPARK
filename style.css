@@ -381,6 +381,9 @@ footer {
 
 @media screen and (max-width: 930px) {
     .searchContainer {
-        display: none;
+        /* display: none; */
+    }
+    .searchForm input {
+        width: 3rem;
     }
 }
