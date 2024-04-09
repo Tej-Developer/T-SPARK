@@ -120,6 +120,27 @@ header{
     font-weight: 200;
 }
 
+.searchBtnRes{
+    height: 35px;
+    width: 35px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    /* position: absolute; */
+    /* right: -16px; */
+}
+
+.searchBtnRes i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
 .micBtn {
     background: transparent;
     border: none;
@@ -293,25 +314,96 @@ main {
     flex-direction: column;
 }
 
-.banner {
-    width: 100%;
-    height: 12rem;
-    margin-top: 20px;
-    background-color: #fff;
+.bannerContainer {
+    width: 1080px;
     overflow: hidden;
-    display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px auto;
+}
+
+.banner {
+    position: relative;
+    width: 3239px;
+    height: 15rem;
+    /* background-color: #fff; */
+    display: flex;
+    float: left;
+    animation: slide 10s 2s infinite;
 }
 
 .banner img {
-    width: 100%;
-    height: 25rem;
+    width: 3239px;
+    height: 100%;
     object-fit: cover;
 }
 
-/* .banner1 {
-} */
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    35% {
+        left: -1619.5px;
+    }
+    40% {
+        left: -3239px;
+    }
+    50% {
+        left: -6478px;
+    }
+    70% {
+        left: -6478px;
+    }
+    85% {
+        left: -9717px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slide1 {
+    0% {
+      left: 0px;
+    }
+    15% {
+      left: 0px;
+    }
+    20% {
+      left: -3239px;
+    }
+    32% {
+      left: -3239px;
+    }
+    35% {
+      left: -2160px;
+    }
+    47% {
+      left: -2160px;
+    }
+    50% {
+      left: -3240px;
+    }
+    63% {
+      left: -3240px;
+    }
+    66% {
+      left: -4320px;
+    }
+    79% {
+      left: -4320px;
+    }
+    82% {
+      left: -5400px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+
 
 .boxes {
     width: 80vw;
@@ -368,7 +460,7 @@ main {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
-    background: red;
+    /* background: red; */
 }
 
 .categories div {
@@ -381,6 +473,19 @@ main {
 /* .categories span {
     border: 2px solid black;
 } */
+
+.man {
+    background: lightblue;
+}
+
+.women {
+    background: lightpink;
+}
+
+.acce {
+    background: #fcd6af;
+}
+
 
 .productsContainer {
     width: 80vw;
@@ -464,10 +569,19 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
+    .logo {
+        margin: 1px;
+    }
+    .logo span {
+        font-size: 30px;
+    }
     .searchContainer {
-        /* display: none; */
+        display: none;
     }
     .searchForm input {
         width: 3rem;
+    }
+    .searchBtnRes {
+        display: flex;
     }
 }
