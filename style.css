@@ -329,16 +329,36 @@ main {
     /* background-color: #fff; */
     display: flex;
     float: left;
-    animation: slide 10s 2s infinite;
+    /* animation: slide 10s 2s infinite; */
 }
 
 .banner img {
     width: 3239px;
     height: 100%;
     object-fit: cover;
+    animation-name: slide;
+    animation-duration: 15s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
 }
 
 @keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide1 {
     0% {
         left: 0;
     }
