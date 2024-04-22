@@ -315,7 +315,8 @@ main {
 }
 
 .bannerContainer {
-    width: 1080px;
+    width: 100%;
+    /* width: 1080px; */
     overflow: hidden;
     justify-content: center;
     align-items: center;
@@ -324,7 +325,8 @@ main {
 
 .banner {
     position: relative;
-    width: 3239px;
+    width: 100%;
+    /* width: 3239px; */
     height: 15rem;
     /* background-color: #fff; */
     display: flex;
@@ -333,10 +335,11 @@ main {
 }
 
 .banner img {
-    width: 3239px;
+    /* width: 3239px; */
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    animation-name: slide;
+    /* animation-name: slide; */
     animation-duration: 15s;
     animation-delay: 2s;
     animation-timing-function: ease;
